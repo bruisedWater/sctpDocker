@@ -2,5 +2,4 @@
 FROM aweimeow/sctp-server
 RUN apt-get update && apt-get install -y lksctp-tools python-pip libsctp-dev python-dev
 RUN pip install robotframework
-EXPOSE 9992
 CMD ["sleep", "infinity"]
