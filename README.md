@@ -40,9 +40,13 @@ ${sctpServerIP}      192.168.16.2    # Change this to the IP of your SCTP server
 ...
 ```
 Execute the TCs:
-`robot tests.robot`
+```
+robot tests.robot
+```
 Once completed the artifacts of the execution will be available to you directly on the host under
-`[PATH_TO_REPO]/sctp-compose/framework/cases`
+```
+[PATH_TO_REPO]/sctp-compose/framework/cases
+```
 
 
 TODOs
