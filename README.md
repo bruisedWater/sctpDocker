@@ -1,11 +1,11 @@
-sctp-compose
 ____________
+sctp-compose
 
 This is an exercise in getting an SCTP server up and running in a docker container via docker-compose
 and running a couple of tests with Robot.
 
-INSTALLATION
 ------------
+INSTALLATION
 Requirements:
  - Docker engine and docker-compose installed on the host.
 
@@ -13,16 +13,20 @@ Requirements:
          This repo has been tested exclusively on Ubuntu hosts.
 
 Clone the repo to your host machine, cd into its root directory and bring up the env with:
-`docker-compose up`
+```
+docker-compose up
+```
 When deployed it will bring up two containers:
  - A container for the SCTP server (sctpubuntu...)
  - A container for the robot test cases (sctprobot...)
 
 Note the IP of the eth0 interface of the SCTP server container with something like:
-`docker exec -ti containers_sctpubuntu_1 ip a | grep eth0`
+```
+docker exec -ti containers_sctpubuntu_1 ip a | grep eth0
+```
 
-EXECUTION of TEST CASES
 -----------------------
+EXECUTION of TEST CASES
 Exec into the robot container and cd into the directory containing the robot test cases:
 ```
 docker exec -ti containers_sctprobot_1 bash
@@ -41,8 +45,8 @@ Once completed the artifacts of the execution will be available to you directly 
 `[PATH_TO_REPO]/sctp-compose/framework/cases`
 
 
-TODOs
 -----
+TODOs
 - Test in other than a Ubuntu host.
 
 - Feed the IP of SCTP server container to the robot suite automatically.
