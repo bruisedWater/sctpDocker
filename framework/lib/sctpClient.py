@@ -7,7 +7,7 @@ import socket
 
 def sendMessage(ip, port, message):
     sk = sctp.sctpsocket_tcp(socket.AF_INET)
-    sk.connect((ip, port))
+    sk.connect((ip, int(port)))
 
     print("Sending Message: " + message)
     bytesSent = sk.sctp_send(msg=message)
