@@ -12,7 +12,7 @@ Requirements:
  - NOTE: It his highly reccomended to deploy on an Ubuntu host.
          This repo has been tested exclusively on Ubuntu hosts.
 
-Clone the repo to your host machine, cd into its root directory and bring up the env with:
+Clone the repo to your host machine, cd into the 'containers' directory and bring up the env with:
 ```
 docker-compose up
 ```
