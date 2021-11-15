@@ -5,6 +5,11 @@ services:
     ports:
       - "9991:9991/sctp"
   sctprobot:
+    depends_on:
+      - sctpubuntu
     build: ./sctprobot
+    network_mode: host
     ports:
       - "9992:9992/sctp"
+    volumes:
+      - ../framework:/root/framework

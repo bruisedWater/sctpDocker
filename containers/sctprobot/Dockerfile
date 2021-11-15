@@ -1,7 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM aweimeow/sctp-server
-RUN apt install lksctp-tools
-RUN apt install -y python3-pip libsctp-dev python-dev
-RUN pip3 install robotframework
+RUN apt-get update && apt-get install -y lksctp-tools python-pip libsctp-dev python-dev
+RUN pip install robotframework
 EXPOSE 9992
 CMD ["sleep", "infinity"]

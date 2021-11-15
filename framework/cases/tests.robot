@@ -3,7 +3,7 @@ Documentation     A test suite with a test that passes and a test that fails.
 Resource          ../lib/sctpClient.robot
 
 *** Variables ***
-${sctpServerIP}      172.17.0.2
+${sctpServerIP}      172.30.0.2
 ${sctpServerPort}    9991
 ${wrongPort}         8882
 ${message}           hello world

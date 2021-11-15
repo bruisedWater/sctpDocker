@@ -1,5 +1,5 @@
 *** Settings ***
-Library    ../libraries/sctpClient.py
+Library    ./sctpClient.py
 
 
 *** Variables ***

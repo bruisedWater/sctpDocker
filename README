@@ -12,3 +12,13 @@ REQUIREMENTS
 - NOTE: It his highly reccomended to deploy on an Ubuntu host.
         This repo has been tested exclusively on Ubuntu hosts.
 
+TODOs
+-----
+
+- Cleanup Dockerfiles: Replace apt install -y ... with apt-get update && apt-get install -y ...
+
+- Find a newer docker image for the SCTP server or build on based on latest Ubuntu
+
+- Add two way communication between client/server
+
+- Robot container to be based on image of sctp server container? ...and just add robot on top?
