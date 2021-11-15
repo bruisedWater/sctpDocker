@@ -1,0 +1,14 @@
+sctp-compose
+____________
+
+This is an exercise in getting an SCTP server up and running in a docker
+container via docker-compose
+
+REQUIREMENTS
+------------
+
+- Docker engine and docker-compose installed on the host
+
+- NOTE: It his highly reccomended to deploy on an Ubuntu host.
+        This repo has been tested exclusively on Ubuntu hosts.
+

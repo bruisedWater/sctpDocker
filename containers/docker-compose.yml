@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  sctpubuntu:
+    build: ./sctpubuntu
+    ports:
+      - "9991:9991/sctp"
+  sctprobot:
+    build: ./sctprobot
+    ports:
+      - "9992:9992/sctp"
