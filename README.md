@@ -9,9 +9,6 @@ INSTALLATION
 Requirements:
  - Docker engine and docker-compose installed on the host.
 
- - NOTE: It his highly reccomended to deploy on an Ubuntu host.
-         This repo has been tested exclusively on Ubuntu hosts.
-
 Clone the repo to your host machine, cd into the 'containers' directory and bring up the env with:
 ```
 docker-compose up
