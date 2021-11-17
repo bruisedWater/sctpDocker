@@ -22,7 +22,7 @@ When deployed it will bring up two containers:
 
 Note the IP of the eth0 interface of the SCTP server container with something like:
 ```
-docker exec -ti containers_sctpubuntu_1 ip a | grep eth0
+docker exec -ti containers_sctpubuntu_1 ip a show dev eth0
 ```
 
 EXECUTION of TEST CASES
